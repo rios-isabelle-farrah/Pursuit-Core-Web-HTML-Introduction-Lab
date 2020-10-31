@@ -26,7 +26,7 @@ ___
 
 [Source: Wikiversity](https://en.wikiversity.org/wiki/Web_Design/HTML_Challenges)
 
-Create a file named `html_challenge1.html`.
+Create a file named `sundial.html`.
 
 In the file you are going to copy and paste the Sundial text below into your html file.
 ```html
