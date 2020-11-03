@@ -36,4 +36,13 @@ describe("Recipe", () => {
   it("should include an ordered directions list", () => {
     cy.get("ol").children().its("length").should("be.gte", 3);
   });
+
+  it("should include horizontal lines to break up the sections", () => {
+      cy.get("hr").its("length").should("be.gte", 4);
+  })
+
+  it("should include a link to a similar recipe", () => {
+          cy.get("a").should("have.length", 1).and("be.visible");
+          cy.get("a").should("have.attr", "href")
+  })
 });
