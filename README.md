@@ -76,7 +76,7 @@ The key is to use the headings to structure your information in a useful (and me
 
 # Question Two
 
-Make a file `recipe.html` that renders a recipe. It should look similar to this:
+Make a file `recipe.html` that renders a recipe. It should look exactly to this:
 
 ![screenshot](https://github.com/joinpursuit/Pursuit-Core-Web-HTML-Introduction-Lab/blob/master/images/pbjImage.png)
 
