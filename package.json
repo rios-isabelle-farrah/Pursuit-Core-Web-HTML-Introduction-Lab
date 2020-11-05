@@ -18,6 +18,7 @@
   "homepage": "https://github.com/joinpursuit/Pursuit-Core-Web-HTML-Introduction-Lab#readme",
   "dependencies": {},
   "devDependencies": {
+    "@testing-library/cypress": "^7.0.1",
     "cypress": "^5.5.0"
   }
 }

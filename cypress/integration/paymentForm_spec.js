@@ -1,3 +1,5 @@
+require( "@testing-library/cypress/add-commands")
+
 describe("paymentForm", () => {
   it("should visit the payment form", () => {
     cy.visit("./paymentForm.html");
@@ -69,10 +71,23 @@ describe("paymentForm", () => {
   })
 
     it("should have an Credit Card input with Name as placeholder", () => {
-      cy.get("input[placeholder='xxxx xxxx xxxx xxxx']").should("have.attr", "type", "text");
+      cy.get("input[placeholder='xxxx xxxx xxxx xxxx']").should("have.attr", "type", "tel");
       cy.get("input[placeholder='xxxx xxxx xxxx xxxx']").should(
         "have.attr",
         "required"
       );
     });
+    it("should have an Expiration input with 'mm/yy' as placeholder", () => {
+      cy.get("input[placeholder='mm/yy']").should("have.attr", "type", "text");
+      cy.get("input[placeholder='mm/yy']").should("have.attr", "required");
+    });
+
+    it("should have a submit button", () => {
+           cy.findByText("Submit Payment").should("exist");
+           cy.get("form").within(() => {
+             cy.findByText("Submit Payment").should("exist");
+           });
+           cy.findByText("Submit Payment").should("have.attr", "type", "submit")
+           cy.get("form").submit()
+    })
 });

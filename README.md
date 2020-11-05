@@ -95,14 +95,6 @@ Make a file `paymentForm.html` that displays a form to enter payment information
 
 ![paymentFromImage](https://github.com/joinpursuit/Pursuit-Core-Web-HTML-Introduction-Lab/blob/master/images/paymentForm.png)
 
-Make sure to include the following elements:
-
-1. Underlining text
-2. Radio buttons
-3. Text input fields
-4. A text dropdown field
-5. A submit button
-
 # Additional Questions from [w3schools](https://www.w3schools.com/html)
 
 - https://www.w3schools.com/html/exercise.asp?filename=exercise_html_attributes3

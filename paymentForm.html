@@ -23,10 +23,10 @@
         <option value="discover">Discover</option>
       </select>
       Card Number:*
-      <input type="text" name="cardNumber" value="" placeholder='xxxx xxxx xxxx xxxx' required /><br />
-      Expiration Date (MM/yy):*
-      <input type="text" name="expirationDate" value="expirationDate" /><br />
-
+<input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" required placeholder="xxxx xxxx xxxx xxxx">
+      Expiration Date:*
+      <input required placeholder="mm/yy" type="text" name="expirationDate" value="" /><br />
+      <!-- <button type="submit">Submit Payment</button> -->
       <input type="submit" value="Submit Payment" />
     </form>
   </body>
