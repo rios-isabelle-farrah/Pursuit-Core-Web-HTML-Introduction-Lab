@@ -34,10 +34,10 @@ describe("paymentForm", () => {
   it("should have 4 radio buttons", () => {
     cy.get("input[type='radio']").should("have.length", 4);
     cy.get("input[type='radio']").first().should("be.checked");
-    cy.get("input[name='prefix']").check("Mx.");
-    cy.get("input[name='prefix']").check("Mr.");
-    cy.get("input[name='prefix']").check("Ms.");
-    cy.get("input[name='prefix']").check("Mrs.");
+    cy.contains("Mx.");
+    cy.contains("Mr.");
+    cy.contains("Ms.");
+    cy.contains("Mrs.");
   });
   it("should have an name input with Name as placeholder", () => {
     cy.get("input[placeholder='Name']").should("have.attr", "type", "text");
@@ -52,7 +52,7 @@ describe("paymentForm", () => {
       cy.get("select").children().should('have.length', 4)
           cy.get("option").should((ops) => {
             expect(ops[0]).to.contain.text("Visa");
-            expect(ops[1]).to.contain.text("Master Card");
+            expect(ops[1]).to.contain.text("Mastercard");
             expect(ops[2]).to.contain.text("American Express");
             expect(ops[3]).to.contain.text("Discover");
           });
@@ -60,8 +60,8 @@ describe("paymentForm", () => {
     cy.get("select").select("visa")
     cy.get("select").should("have.value","visa")
 
-    cy.get("select").select("masterCard")
-    cy.get("select").should("have.value", "masterCard");
+    cy.get("select").select("mastercard")
+    cy.get("select").should("have.value", "mastercard");
 
     cy.get("select").select("americanExpress")
     cy.get("select").should("have.value", "americanExpress");
