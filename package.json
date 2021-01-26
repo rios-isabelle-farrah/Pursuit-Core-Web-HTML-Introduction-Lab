@@ -4,7 +4,7 @@
   "description": "[![Pursuit Logo](https://avatars1.githubusercontent.com/u/5825944?s=200&v=4)](https://pursuit.org)",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "test": "./node_modules/.bin/cypress open"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,6 @@
   "dependencies": {},
   "devDependencies": {
     "@testing-library/cypress": "^7.0.1",
-    "cypress": "^5.5.0"
+    "cypress": "^6.1.0"
   }
 }
