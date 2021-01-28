@@ -3,7 +3,7 @@ describe("Sundial", () => {
     cy.visit("./sundial.html");
   });
   it("should have a main header", () => {
-    cy.get("h1").should("have.text", "Sundial");
+    cy.get("h1").contains("Sundial");
   });
   it("should have 2 sub headers", () => {
     const subHeaders = cy.get("h2");
