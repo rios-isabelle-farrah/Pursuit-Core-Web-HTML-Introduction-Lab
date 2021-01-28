@@ -30,11 +30,11 @@ When you run `npm test` in your terminal, the test code does these things:
 - call `isOdd(888)` and expect the result to be `false`
 
 ## Okay, so how do we test websites?
-So we know how to write and test functions. But now we're going to do labs and assessments using websites built HTML. 
+So we know how to write and test functions. But now we're going to do labs and assessments using websites built with HTML. 
 
 **Websites aren't functions. So how do we test them?**
 
-We test websites (or HTML files on your computer) using a different type of automated tool. Here's how this type of tool work:
+We test websites (or HTML files on your computer) using a different type of automated tool. Here's how this type of tool works:
 1. You run the command `npm test` (same!)
 1. The tool launches a web browser in your computer that is controlled by the tool.
 1. Our test code gives the tool instructions for what to do in the browser. For example, we can tell the tool to:
@@ -50,7 +50,7 @@ Website testing tools have been around for a long time. You will often see the n
 
 The testing tool we will use in this class is [Cypress](https://www.cypress.io/), which is the best and most popular website testing tool in the industry. Yay!
 
-Here's [the Cypress test for the first problem in the HTML intro lab]:
+Here's [the Cypress test for the first problem in the HTML intro lab](https://github.com/joinpursuit/Pursuit-Core-Web-HTML-Introduction-Lab/blob/master/cypress/integration/sundial_spec.js#L1-L10):
 ```
 describe("Sundial", () => {
   it("vists sundial.html", () => {
@@ -66,7 +66,7 @@ describe("Sundial", () => {
   // more tests...
 });
 ```
-There are a couple of tests here.
+Let's look at the first few tests.
 1. Visit the web page
 - We use the function `cy.visit()` to visit a URL or open an HTML file.
 - `cy.visit` takes a URL or file path as its argument: `cy.visit("./sundial.html")`
@@ -124,7 +124,7 @@ Let's run the cypress tests for [the "Sundial" problem in the HTML intro lab](ht
 
 ![Cypress App Image](https://github.com/joinpursuit/Pursuit-Core-Web-HTML-Introduction-Lab/blob/master/images/cypress_app.png)
 
-6. This will open a new Chrome window that Cypress controls. You'll notice a few things (labeled in the photo):
+6. This will open a new Chrome window that Cypress controls. You'll notice a few things (labeled in the image below):
 - (1) A summary of how many tests have passed (green check) or failed (red X) and how many seconds it has taken to run the tests.
 - (2) An embedded web browser that shows the web page you're visiting (or an error if it can't be visited)
 - (3) A button to stop or rerun the tests
@@ -166,7 +166,7 @@ When we rerun the test, it still fails. Let's debug this!
 
 First, hover your cursor over the first line of the test on the left side: `get h1`. You will see that the heading on the web page is highlighted by cypress. So that's the h1 we're looking at. This step went okay.
 
-Next, look at the output. The next step is in red, so it failed: `contains Sundial`. Again, there is a super helpful error message:
+Next, look at the output. The next step is in red, so this is the step of the test where it failed: `contains Sundial`. Again, there is a helpful error message:
 ```
 Timed out retrying after 4000ms: Expected to find content: 'Sundial' within the element: <h1> but never did.
 ```
