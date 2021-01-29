@@ -21,6 +21,11 @@ ___
   * Submit the link to your pull request on Canvas. 
 
 
+# Before you start
+
+Since we're working in the web browser now, we're using a different testing framework called Cypress. Cypress runs your code in a virtual browser and can be programmed to examine various parts of your site.
+
+Read [Testing Websites with Cypress](./cypress_intro.md) to get an understanding of how it works.
 
 # Question One
 
@@ -69,16 +74,15 @@ Your challenge will be to add HTML tags to make your file look like the one in t
 * emphasis and strong (`<em>` and `<strong>`)
 
 
-A web browser will display the `h1` heading very large, and the `h6` heading quite small, and all the other headings in between! But don't get into the habit of selecting an h4 heading because it displays with the size that you're after! You can always modify the size of your elements using your stylesheet (more on that later).
+A web browser will display the `h1` heading very large, and the `h6` heading quite small, and all the other headings in between! But don't get into the habit of selecting an h4 heading just because it's the size you want! You can always modify the size of your elements using your stylesheet (more on that later).
 
 The key is to use the headings to structure your information in a useful (and meaningful) way! For example, every page should only ever have one main heading - your h1 heading. An h2 heading should only ever be a sub-heading of your h1 heading. Similarly, an h3 heading should only ever be a sub-heading of an h2 heading etc.
-
 
 # Question Two
 
 Make a file `recipe.html` that renders a recipe. It should look exactly to this:
 
-![screenshot](https://github.com/joinpursuit/Pursuit-Core-Web-HTML-Introduction-Lab/blob/master/images/pbjImage.png)
+![screenshot](./images/pbjImage.png)
 
 Include the following:
 
@@ -88,12 +92,11 @@ Include the following:
 4. An ordered list of directions. `<ol>`
 5. Add a link to a similar recipe somewhere online.
 
-
 # Question Three
 
 Make a file `paymentForm.html` that displays a form to enter payment information.  It should like similar to this:
 
-![paymentFromImage](https://github.com/joinpursuit/Pursuit-Core-Web-HTML-Introduction-Lab/blob/master/images/paymentForm.png)
+![paymentFromImage](./images/paymentForm.png)
 
 # Additional Questions from [w3schools](https://www.w3schools.com/html)
 
