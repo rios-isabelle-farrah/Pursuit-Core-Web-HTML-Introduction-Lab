@@ -77,7 +77,7 @@ Let's look at the first few tests and what they do.
 
 2. Find the main header and test that it has the text `Sundial`
 - We use the function `cy.get()` to find an element on the page
-- `cy.get("h1")` finds all of the `<h1>` elements on the page and keeps them in memory. 
+- `cy.get("h1")` returns a list of all of the `<h1>` elements on the page. 
 - If there is no `<h1>` element, the test fails.
 - If Cypress finds any `<h1>` elements, we use the `contains()` function to find the first `<h1>` that contains the text we're looking for.
 - `get()` and `contains()` are combined with chaining: `cy.get("h1").contains("Sundial")`
@@ -85,8 +85,9 @@ Let's look at the first few tests and what they do.
 
 3. Check that there are two subheaders
 - We use `cy.get("h2")` to find all of the `<h2>` elements.
-- The list of `<h2>` elements is stored in memory and assigned to the `subHeaders` variable.
+- The list of `<h2>` elements is assigned to the `subHeaders` variable.
 - We use `should("have.length", 2)` to check that the list of `<h2>` elements has a length of two. (That is, we check that there are two `<h2>` elements, not 1, not 3, not 4...)
+- If there are not exactly 2 `<h2>` elements, the test fails.
 
 
 So far we've seen a few important Cypress functions:
